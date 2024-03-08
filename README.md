@@ -1,1 +1,2 @@
-This is the repo for general Tee Time, not front end or back end
+This is the TeeTime repo
+Using nextjs for server side rendering with react
