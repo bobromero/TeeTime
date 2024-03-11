@@ -5,14 +5,19 @@ import type { NextRequest } from 'next/server'
 export function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith('/Users')) {
     return NextResponse.redirect(new URL('/Users/8', request.url))
-  } else {
-    return NextResponse.redirect(new URL('/home', request.url))
   }
+
+  if (request.nextUrl.pathname.startsWith('/Courses')) {
+    return NextResponse.redirect(new URL('/Courses/1', request.url))
+  }
+
+  return NextResponse.redirect(new URL('/home', request.url))
+
 
 }
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/Users/', '/Courses/:path*'],
+  matcher: ['/Users/', '/Courses/', '/anything/:path*'],
 }
 /** @param matcher Paths that the middle ware will manage*/

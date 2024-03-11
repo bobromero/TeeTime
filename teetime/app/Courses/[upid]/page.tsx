@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CoursePage = () => {
+const CoursePage = ({ params }: { params: { upid: string } }) => {
   return (
-    <div>CoursePage</div>
+    <div>CoursePage of {params.upid}</div>
   )
 }
 
