@@ -5,3 +5,4 @@ export async function GET(request: Request) {
     message: 'pog'
   })
 }
+//TODO we can make this return information about the backend possibly
