@@ -11,6 +11,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/Courses/1', request.url))
   }
 
+  if (request.nextUrl.pathname.startsWith('/Profile')) {
+    //TODO if(request.cookies.get())
+
+    return NextResponse.redirect(new URL('/Register', request.url))
+  }
+
   return NextResponse.redirect(new URL('/home', request.url))
 
 
@@ -18,6 +24,6 @@ export function middleware(request: NextRequest) {
 
 // See "Matching Paths" below to learn more
 export const config = {
-  matcher: ['/Users/', '/Courses/', '/anything/:path*'],
+  matcher: ['/Users/', '/Courses/', '/Profile/:path*'],
 }
 /** @param matcher Paths that the middle ware will manage*/
