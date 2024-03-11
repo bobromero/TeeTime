@@ -35,5 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/LocalPostgres
+LocalPostgres
 LocalPostgres/StackBuilder_3rd_party_licenses.txt
