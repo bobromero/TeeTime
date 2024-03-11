@@ -16,6 +16,15 @@
   }
 }
 
+img {
+  white-space: nowrap
+}
+
+.Nav-grid-item {
+  align-self: center;
+  justify-content: center;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
