@@ -14,7 +14,7 @@ export enum TypeImage {
  * @param ID String or number relating to specific image stored in database
  * @returns Url to image
  */
-export function QueryImage(Image: TypeImage, ID: string | number): string {
+export function QueryImage(ID: string | number, Image: TypeImage = TypeImage.Utility): string {
 
   let ImageQuery: string = ID.toString();
 
