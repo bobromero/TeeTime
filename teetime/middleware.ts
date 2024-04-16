@@ -8,7 +8,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (request.nextUrl.pathname.startsWith('/Courses')) {
-    return NextResponse.redirect(new URL('/CourseSearch', request.url))
+    return NextResponse.redirect(new URL('/CourseSearch/5', request.url))
   }
 
   if (request.nextUrl.pathname.startsWith('/Profile')) {
