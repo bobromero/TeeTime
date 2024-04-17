@@ -10,6 +10,8 @@ const UserPage = ({ params }: { params: { uid: string } }) => {
           uid: params.uid
         }
       } />
+
+      <h1>Courses scored at list</h1>
     </div>
   )
 }
