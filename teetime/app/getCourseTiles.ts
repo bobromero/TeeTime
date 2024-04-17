@@ -81,4 +81,20 @@ function CourseToTile(dummyCourse: CourseInformation): TileInformation {
     UPID: dummyCourse.UPID
   }
 
+
+
+}
+/**
+   * 
+   * @param UPID Id of the course you want info from
+   */
+export function GetCourseInfo(UPID: string): CourseInformation {
+  return {
+    Name: "TOP GOLF COURSE",
+    description: "WInniner",
+    address: "68 random street",
+    UPID: UPID,
+    NumberOfHoles: 18,
+    Yardage: 6578
+  }
 }
