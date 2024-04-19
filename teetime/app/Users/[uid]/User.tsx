@@ -1,5 +1,5 @@
 import React from 'react'
-import { getUserInfo, UserInfo } from '../../getUserInfo'
+import { getUserInfo, UserInfo } from './getUserInfo'
 
 const User = ({ params }: { params: { uid: string } }) => {
   let Golfer: UserInfo = getUserInfo(params.uid);
