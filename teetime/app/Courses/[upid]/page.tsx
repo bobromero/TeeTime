@@ -1,5 +1,5 @@
 import React from 'react'
-import { CourseInformation, GetCourseInfo } from '../../getCourseTiles'
+import { CourseInformation, GetCourseInfo } from '../../CourseSearch/[numSearch]/getCourseTiles'
 
 const CoursePage = ({ params }: { params: { upid: string } }) => {
   let courseInfo: CourseInformation = GetCourseInfo(params.upid);
