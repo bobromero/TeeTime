@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import React from 'react'
 
-import { TileInformation, GetCourseTiles } from '../../getCourseTiles';
+import { TileInformation, GetCourseTiles } from './getCourseTiles';
 
-let TileInfo: TileInformation[] = GetCourseTiles();
+let TileInfo: TileInformation[] = await GetCourseTiles();
 
 const Tiles = ({ num }: { num: number }) => {
-  console.log(num);
+  num = Math.min(TileInfo.length, num)
   const elements = [];
   for (let i = 0; i < num; i++) {
     elements.push(
