@@ -12,6 +12,7 @@ const CoursePage = async ({ params }: { params: { upid: string } }) => {
       <h1>Number of holes: {courseInfo.NumberOfHoles}</h1>
       <h1>Yardage: {courseInfo.Yardage}</h1>
       <Link href={'/UpdateCourse/' + params.upid}>Update Course</Link>
+      <Link href={'/RemoveCourses/' + params.upid}>Remove Course</Link>
     </div>
   )
 }
