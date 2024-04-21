@@ -1,7 +1,11 @@
 import React from 'react'
 import User from './User'
+import { GetUser } from './GetUser'
+import { UserInfo } from "./getUserInfo";
+import Link from 'next/link';
 
 const UserPage = ({ params }: { params: { uid: string } }) => {
+
   return (
     <div>
 
@@ -12,6 +16,9 @@ const UserPage = ({ params }: { params: { uid: string } }) => {
       } />
 
       <h1>Courses scored at list</h1>
+
+
+      <Link href={'/UpdateUser/' + params.uid}>Update Info</Link>
     </div>
   )
 }
