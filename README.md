@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Website Image](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
+![Website Image](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -97,26 +97,19 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is a Mod that requires Melon Loader and of course Slapshot Rebound. Download instructions can be found on the <a href = "https://www.nexusmods.com/slapshotrebound/mods/3">Nexusmods</a>. page and the <a href = "https://discord.gg/t4XDkAKpTr">Discord</a>.
+This is a website that showcases golfers around the globe and allows for the sharing of golf performances.
 
 ### Prerequisites
 
-All instructions can be found on the discord, but you will need .net 6 or later to use the mod.
+Node will need to be installed. 
 
 ### Instructions
 
-The steps to make a pack are as follows,
-1. Set up a scene by setting spawns with C for player spawn F for puck Spawn and G for puck call location.
-2. Once you are happy with a scene, press f1 and click save as scene.
-   It is now saved and you can reset the ice and set up a new scene.
-3. Once you are happy with your scenes, you can press save as pack, and it will prompt you with a text box.
-4. Type the name of your pack, normal file naming conventions, and click save as pack again.
-
-The pack is created and now in your slapshot folder, you will see a new folder called Training packs, and the pack will be in there.
-
-You can share this file with others who have the mod, and they can play the scenes you set up.
-
-Putting packs in your training pack folder will allow you to load them in game.
+You will run in the correct directory
+1. npm install
+to install dependencies and then 
+2. npm run dev 
+to test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
