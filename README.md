@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
+
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/bobromero/TeeTime">
+    <img src="https://pbs.twimg.com/profile_images/1317646328927760390/I81XDoXL_400x400.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Slapshot Training Packs</h3>
+
+  <p align="center">
+    This is a mod for Slapshot Rebound which allows the creation and sharing of training packs.
+    <br />
+    <a href="https://github.com/bobromero/TeeTime"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://www.nexusmods.com/slapshotrebound/mods/3">View Demo</a>
+    ·
+    <a href="https://github.com/bobromero/TeeTime/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/bobromero/TeeTime/issues">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#Instructions"></a>Instructions</li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Slapshot Training Packs Screen Shot](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+### Built With
+
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+[![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+This is a Mod that requires Melon Loader and of course Slapshot Rebound. Download instructions can be found on the <a href = "https://www.nexusmods.com/slapshotrebound/mods/3">Nexusmods</a>. page and the <a href = "https://discord.gg/t4XDkAKpTr">Discord</a>.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+All instructions can be found on the discord, but you will need .net 6 or later to use the mod.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The steps to make a pack are as follows,
+1. Set up a scene by setting spawns with C for player spawn F for puck Spawn and G for puck call location.
+2. Once you are happy with a scene, press f1 and click save as scene.
+   It is now saved and you can reset the ice and set up a new scene.
+3. Once you are happy with your scenes, you can press save as pack, and it will prompt you with a text box.
+4. Type the name of your pack, normal file naming conventions, and click save as pack again.
 
-## Learn More
+The pack is created and now in your slapshot folder, you will see a new folder called Training packs, and the pack will be in there.
 
-To learn more about Next.js, take a look at the following resources:
+You can share this file with others who have the mod, and they can play the scenes you set up.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Putting packs in your training pack folder will allow you to load them in game.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<!-- CONTACT -->
+## Contact
+
+Robert Romero - [LinkedIn][linkedin-url] - robromero389@gmail.com.com
+
+Project Link: [https://github.com/bobromero/TeeTime](https://github.com/bobromero/TeeTime)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/bobromero/TeeTime.svg?style=for-the-badge
+[contributors-url]: https://github.com/bobromero/TeeTime/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bobromero/TeeTime.svg?style=for-the-badge
+[forks-url]: https://github.com/bobromero/TeeTime/network/members
+[stars-shield]: https://img.shields.io/github/stars/bobromero/TeeTime.svg?style=for-the-badge
+[stars-url]: https://github.com/bobromero/TeeTime/stargazers
+[issues-shield]: https://img.shields.io/github/issues/bobromero/TeeTime.svg?style=for-the-badge
+[issues-url]: https://github.com/bobromero/TeeTime/issues
+[license-shield]: https://img.shields.io/github/license/bobromero/TeeTime.svg?style=for-the-badge
+[license-url]: https://github.com/bobromero/TeeTime/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/robert-romero-a61403291
+[product-screenshot]: [images/screenshot.png](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png
