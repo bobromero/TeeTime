@@ -9,7 +9,7 @@ export default function Home() {
         Tee Time is a Golfers First app dedicated to making the game of golf more enjoyable to everyone!
       </p>
       <p>Find courses of different skill levels near you and track your scores along with your friends</p>
-      <Link href="/Profile">Find Courses</Link>
+      <Link href="/Courses/">Find Courses</Link>
     </main>
   );
 }
