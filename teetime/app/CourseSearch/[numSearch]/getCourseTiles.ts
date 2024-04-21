@@ -1,4 +1,4 @@
-import { GetCourses } from "./GetCourses";
+import { GetCourses, GetSingleCourse } from "./GetCourses";
 
 export type CourseInformation = {
   Name: string;
@@ -45,13 +45,6 @@ function CourseToTile(Course: CourseInformation): TileInformation {
    * 
    * @param UPID Id of the course you want info from
    */
-export function GetCourseInfo(UPID: string): CourseInformation {
-  return {
-    Name: "TOP GOLF COURSE",
-    description: "WInniner",
-    address: "68 random street",
-    UPID: UPID,
-    NumberOfHoles: 18,
-    Yardage: 6578
-  }
+export async function GetCourseInfo(UPID: string): Promise<CourseInformation> {
+  return await GetSingleCourse(UPID);
 }
