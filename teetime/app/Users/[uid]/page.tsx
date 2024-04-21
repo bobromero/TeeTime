@@ -19,6 +19,7 @@ const UserPage = ({ params }: { params: { uid: string } }) => {
 
 
       <Link href={'/UpdateUser/' + params.uid}>Update Info</Link>
+      <Link href={'/DeleteUser/' + params.uid}>Delete User</Link>
     </div>
   )
 }
