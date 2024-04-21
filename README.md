@@ -41,7 +41,7 @@
     <a href="https://github.com/bobromero/TeeTime"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.nexusmods.com/slapshotrebound/mods/3">View Demo</a>
+    <a href="https://github.com/bobromero/TeeTime">View Demo</a>
     ·
     <a href="https://github.com/bobromero/TeeTime/issues">Report Bug</a>
     ·
@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Website Image](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
+![Website Image](teetime\app\favicon.ico)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
