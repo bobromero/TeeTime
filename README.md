@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Slapshot Training Packs Screen Shot](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
+[![Website Image](https://staticdelivery.nexusmods.com/mods/5389/images/3/3-1695435860-271703098.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,8 +86,9 @@
 
 ### Built With
 
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
-[![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
+![Nextjs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square)
+![Postgres](https://img.shields.io/badge/postgresql-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
