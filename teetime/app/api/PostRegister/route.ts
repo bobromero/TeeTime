@@ -1,40 +1,36 @@
-import { NextRequest, NextResponse } from 'next/server'
 import { pool } from '../../Pool';
-import { NextApiRequest } from 'next';
 import { HashPassword } from '../../PasswordManager';
 import { useRouter } from 'next/navigation';
+import { NextResponse } from 'next/server';
 
 
 
-export async function POST(request: Request) {
+export async function POST(request: Request): Promise<Response> {
   const requestData = await request.json();
   // console.log(requestData);
   let username = requestData['username'];
   let password = requestData['password'];
-  console.log(username, password)
+  let bio = requestData['bio'];
+  let handicap = requestData['handicap'];
 
-  RegisterUser(username, password);
 
-  const router = useRouter()
-  router.push('/');
-
-  return NextResponse.json({
+  RegisterUser(username, password, bio, handicap);
+  console.log('Done')
+  return new Response('hello next', {
     status: 201,
-    message: 'pog'
   })
 }
 
-async function RegisterUser(username: string, password: string): Promise<string> {
+async function RegisterUser(username: string, password: string, bio: string, handicap: number): Promise<string> {
   try {
     const client = await pool.connect();
 
-    const upidResult = await client.query("SELECT uuid_generate_v4();");
-    const upid = upidResult.rows[0];
+    // const upidResult = await client.query("SELECT uuid_generate_v4();");
+    // const upid = upidResult.rows[0];
 
-    const InsertGolfer = await client.query("INSERT INTO golfer(golferid, pfplink, bio, handicap, username, password)values('" + upid + "', 'pfplink', 'bio', -1, " + username + ", " + HashPassword(password) + ");");
+    const InsertGolfer = await client.query("INSERT INTO golfer(golferid, pfplink, bio, handicap, username, password)values(uuid_generate_v4(), 'pfplink', '" + bio + "', " + handicap + ", '" + username + "', '" + (await HashPassword(password)).toString() + "');");
 
     client.release();
-    pool.end();
     return username;
   } catch (error) {
     console.error("Error adding data: ", error);
