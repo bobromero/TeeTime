@@ -1,14 +1,16 @@
 import React from 'react'
 import { getUserInfo, UserInfo } from './getUserInfo'
+import { GetUser } from './GetUser';
 
-const User = ({ params }: { params: { uid: string } }) => {
-  let Golfer: UserInfo = getUserInfo(params.uid);
+
+const User = async ({ params }: { params: { uid: string } }) => {
+  let Golfer: UserInfo = await GetUser(params.uid);
   return (
     <div>
-      <h1>UserPage for {params.uid}</h1>
-      <h2>{Golfer.UserName}</h2>
+      <img src={Golfer.pfpLink} />
+      <h1>UserPage for {Golfer.UserName}</h1>
       <h2>Handicap: {Golfer.Handicap}</h2>
-      <p>{Golfer.Bio}</p>
+      <p>About Me: {Golfer.Bio}</p>
     </div>
   )
 }
