@@ -3,9 +3,13 @@ import React from 'react'
 
 import { TileInformation, GetCourseTiles } from './getCourseTiles';
 
-let TileInfo: TileInformation[] = await GetCourseTiles();
 
-const Tiles = ({ num }: { num: number }) => {
+
+const Tiles = async ({ num }: { num: any }) => {
+  if (num == 'src') {
+    return;
+  }
+  let TileInfo: TileInformation[] = await GetCourseTiles(num);
   num = Math.min(TileInfo.length, num)
   const elements = [];
   for (let i = 0; i < num; i++) {
