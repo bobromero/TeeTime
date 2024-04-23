@@ -26,10 +26,17 @@ img {
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+}
+
+input {
+  color: rgb(var(--background-rgb));
+  background: #0f0f0f;
+  ;
 }
 
 @layer utilities {

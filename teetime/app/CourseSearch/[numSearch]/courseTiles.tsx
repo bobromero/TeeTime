@@ -27,7 +27,10 @@ const Tiles = async ({ num }: { num: any }) => {
   return elements;
 }
 
-const CourseTiles = ({ params }: { params: { numSearch: number } }) => {
+const CourseTiles = ({ params }: { params: { numSearch: any } }) => {
+  if (params.numSearch == 'src') {
+    return;
+  }
   return (
     <div>
       <h1>Courses</h1>

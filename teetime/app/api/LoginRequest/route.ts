@@ -24,7 +24,7 @@ export async function POST(request: Request): Promise<Response> {
   })
 }
 
-async function LoginUser(username: string, password: string): Promise<boolean> {
+export async function LoginUser(username: string, password: string): Promise<boolean> {
   try {
     const client = await pool.connect();
 
