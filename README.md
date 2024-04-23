@@ -33,10 +33,10 @@
     <img src="teetime\app\favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Slapshot Training Packs</h3>
+<h3 align="center">Tee Time</h3>
 
   <p align="center">
-    This is a mod for Slapshot Rebound which allows the creation and sharing of training packs.
+    Tee Time Web App
     <br />
     <a href="https://github.com/bobromero/TeeTime"><strong>Explore the docs »</strong></a>
     <br />
