@@ -8,7 +8,7 @@ async function QueryUser(username: string): Promise<UserInfo> {
     console.log("connected");
     username = username.replaceAll('%20', ' ')
 
-    const result = await client.query("SELECT username,handicap,bio FROM golfer WHERE username = '" + username + "';")
+    const result = await client.query("SELECT * FROM golfer WHERE username = '" + username + "';")
 
     const data = result.rows;
     if (data <= 0) {

@@ -2,9 +2,11 @@ import React from 'react'
 import User from './User'
 import { GetUser } from './GetUser'
 import { UserInfo } from "./getUserInfo";
-import Link from 'next/link';
+import Link from 'next/link'
+import UserScores from './UserScores';
 
-const UserPage = ({ params }: { params: { uid: string } }) => {
+
+const UserPage = async ({ params }: { params: { uid: string } }) => {
 
   return (
     <div>
@@ -17,8 +19,11 @@ const UserPage = ({ params }: { params: { uid: string } }) => {
 
       <h1>Courses scored at list</h1>
 
-
+      <UserScores params={{
+        golferid: (await GetUser(params.uid)).GolferID
+      }} />
       <Link href={'/UpdateUser/' + params.uid}>Update Info</Link>
+      <Link href={'/DeleteUser/' + params.uid}>Delete User</Link>
     </div>
   )
 }
